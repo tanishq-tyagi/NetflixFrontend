@@ -9,7 +9,7 @@ COPY package*.json ./
 
 # Install any needed packages specified in package.json
 RUN npm install --only=production
-
+RUN npm install --save-dev typescript
 # Copy the rest of the application code to the container
 COPY . .
 
